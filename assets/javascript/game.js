@@ -57,28 +57,24 @@ function winlosscon() {
 //click functions to add points to playerscore
 $(".crystal1").on('click', function(){
     playerScore = Number(playerScore) + Number(crystal1);
-    console.log(playerScoreText);
     $(".playerScore").text(Number(playerScore));
     winlosscon();
 });
 
 $(".crystal2").on('click', function(){
     playerScore = Number(playerScore) + Number(crystal2);
-    console.log(playerScoreText);
     $(".playerScore").text(Number(playerScore));
     winlosscon();
 });
 
 $(".crystal3").on('click', function(){
     playerScore = Number(playerScore) + Number(crystal3);
-    console.log(playerScoreText);
     $(".playerScore").text(Number(playerScore));
     winlosscon();
 });
 
 $(".crystal4").on('click', function(){
     playerScore = Number(playerScore) + Number(crystal4);
-    console.log(playerScoreText);
     $(".playerScore").text(Number(playerScore));
     winlosscon();
 });
