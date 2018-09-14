@@ -45,10 +45,12 @@ initializeGame();
 function winlosscon() {
     if (Number(playerScore) === Number(scoreGoal)) {
         alert("Good Job! You Win!");
+        console.log("WINNER!")
         wins++;
         initializeGame();
     } else if (Number(playerScore) > Number(scoreGoal)) {
         alert("You Lose! Try Again!");
+        console.log("LOSER!");
         loss++;
         initializeGame();
     }
@@ -57,24 +59,28 @@ function winlosscon() {
 //click functions to add points to playerscore
 $(".crystal1").on('click', function(){
     playerScore = Number(playerScore) + Number(crystal1);
+    console.log("playerScore= " + playerScore);
     $(".playerScore").text(Number(playerScore));
     winlosscon();
 });
 
 $(".crystal2").on('click', function(){
     playerScore = Number(playerScore) + Number(crystal2);
+    console.log("playerScore= " + playerScore);
     $(".playerScore").text(Number(playerScore));
     winlosscon();
 });
 
 $(".crystal3").on('click', function(){
     playerScore = Number(playerScore) + Number(crystal3);
+    console.log("playerScore= " + playerScore);
     $(".playerScore").text(Number(playerScore));
     winlosscon();
 });
 
 $(".crystal4").on('click', function(){
     playerScore = Number(playerScore) + Number(crystal4);
+    console.log("playerScore= " + playerScore);
     $(".playerScore").text(Number(playerScore));
     winlosscon();
 });
